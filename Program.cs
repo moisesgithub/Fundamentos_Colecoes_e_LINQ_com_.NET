@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿
 int[] arrayInteiros = new int[3];
 
 arrayInteiros[0] = 10;
