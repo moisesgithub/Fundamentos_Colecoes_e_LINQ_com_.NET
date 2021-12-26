@@ -1,0 +1,15 @@
+C:\Projetos\ExemplosColecoes\Colecoes\bin\Debug\net6.0\Colecoes.exe
+C:\Projetos\ExemplosColecoes\Colecoes\bin\Debug\net6.0\Colecoes.deps.json
+C:\Projetos\ExemplosColecoes\Colecoes\bin\Debug\net6.0\Colecoes.runtimeconfig.json
+C:\Projetos\ExemplosColecoes\Colecoes\bin\Debug\net6.0\Colecoes.dll
+C:\Projetos\ExemplosColecoes\Colecoes\bin\Debug\net6.0\ref\Colecoes.dll
+C:\Projetos\ExemplosColecoes\Colecoes\bin\Debug\net6.0\Colecoes.pdb
+C:\Projetos\ExemplosColecoes\Colecoes\obj\Debug\net6.0\Colecoes.csproj.AssemblyReference.cache
+C:\Projetos\ExemplosColecoes\Colecoes\obj\Debug\net6.0\Colecoes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\ExemplosColecoes\Colecoes\obj\Debug\net6.0\Colecoes.AssemblyInfoInputs.cache
+C:\Projetos\ExemplosColecoes\Colecoes\obj\Debug\net6.0\Colecoes.AssemblyInfo.cs
+C:\Projetos\ExemplosColecoes\Colecoes\obj\Debug\net6.0\Colecoes.csproj.CoreCompileInputs.cache
+C:\Projetos\ExemplosColecoes\Colecoes\obj\Debug\net6.0\Colecoes.dll
+C:\Projetos\ExemplosColecoes\Colecoes\obj\Debug\net6.0\ref\Colecoes.dll
+C:\Projetos\ExemplosColecoes\Colecoes\obj\Debug\net6.0\Colecoes.pdb
+C:\Projetos\ExemplosColecoes\Colecoes\obj\Debug\net6.0\Colecoes.genruntimeconfig.cache
