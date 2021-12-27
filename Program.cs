@@ -1,18 +1,31 @@
-﻿int[,] matriz = new int[4,2]
-{
-    {10,2},
-    {30,4},
-    {5,60},
-    {70,8}
-};//matriz já inicializada
+﻿using Colecoes.Helper;
 
-for (int i = 0; i < matriz.GetLength(0); i++)
-{
-    for (int j = 0; j < matriz.GetLength(1); j++)
-    {
-        System.Console.WriteLine(matriz[i,j]);
-    }
-}
+OperacoesArray op = new OperacoesArray();
+int[] array = new int[10] { 6, 3, 8, 1, 9 , 2, 5, 4, 7, 0 };
+
+System.Console.WriteLine("Array original: ");
+op.ImprimirArray(array);
+
+op.OrdernarBubbleSort(ref array);
+
+System.Console.WriteLine("Array ordenado: ");
+op.ImprimirArray(array);
+
+// int[,] matriz = new int[4,2]
+// {
+//     {10,2},
+//     {30,4},
+//     {5,60},
+//     {70,8}
+// };//matriz já inicializada
+
+// for (int i = 0; i < matriz.GetLength(0); i++)
+// {
+//     for (int j = 0; j < matriz.GetLength(1); j++)
+//     {
+//         System.Console.WriteLine(matriz[i,j]);
+//     }
+// }
 
 //matriz[0,0] = 5;
 
