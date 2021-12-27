@@ -5,17 +5,29 @@ OperacoesArray op = new OperacoesArray();
 int[] array = new int[5] { 6, 3, 8, 1, 9 };
 int[] arrayCopia = new int[10];
 
-int valorProcurado = 10;
-bool exixte = op.Existe(array, valorProcurado);
+int valorProcurado = 5;
 
-if (exixte)
+bool todosMaiorQue = op.TodosMaiorQue(array, valorProcurado);
+
+if (todosMaiorQue)
 {
-    System.Console.WriteLine("Existe: {0}", valorProcurado);
-}
+    System.Console.WriteLine("Todos os valores são maiores que: {0}", valorProcurado);
+}   
 else
 {
-    System.Console.WriteLine("Não existe: {0}", valorProcurado);
+    System.Console.WriteLine("Existe valores que não são maiores que: {0}", valorProcurado);
 }
+
+// bool exixte = op.Existe(array, valorProcurado);
+
+// if (exixte)
+// {
+//     System.Console.WriteLine("Existe: {0}", valorProcurado);
+// }
+// else
+// {
+//     System.Console.WriteLine("Não existe: {0}", valorProcurado);
+// }
 
 
 //System.Console.WriteLine("Array original: ");
