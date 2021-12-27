@@ -1,19 +1,35 @@
 ﻿using Colecoes.Helper;
 
-OperacoesArray op = new OperacoesArray();
+List<string> estados = new List<string>();
+estados.Add("SP");
+estados.Add("RJ");
+estados.Add("MG");
 
-int[] array = new int[5] { 6, 3, 8, 1, 9 };
-int[] arrayCopia = new int[10];
-string[] arrayString = op.ConverterParaArrayString(array);
+System.Console.WriteLine($"Quantidade de elementos na lista: {estados.Count}");
 
-//int valorProcurado = 3;
+foreach (var item in estados)
+{
+    System.Console.WriteLine(item);
+}
+for (int i = 0; i < estados.Count; i++)
+{
+    System.Console.WriteLine($"índice {i}, {estados[i]}");
+}
 
 
-System.Console.WriteLine("Capacidade atual do array: " + array.Length);
+// OperacoesArray op = new OperacoesArray();
 
-op.RedimensionarArray(ref array, array.Length * 2);
+// int[] array = new int[5] { 6, 3, 8, 1, 9 };
+// int[] arrayCopia = new int[10];
+// string[] arrayString = op.ConverterParaArrayString(array);
 
-System.Console.WriteLine($"Capacidade atual do array após redimensionar: {array.Length}");
+// //int valorProcurado = 3;
+
+// System.Console.WriteLine("Capacidade atual do array: " + array.Length);
+
+// op.RedimensionarArray(ref array, array.Length * 2);
+
+// System.Console.WriteLine($"Capacidade atual do array após redimensionar: {array.Length}");
 
 // int indice = op.ObterIndice(array, valorProcurado);
 
@@ -59,7 +75,6 @@ System.Console.WriteLine($"Capacidade atual do array após redimensionar: {array
 //     System.Console.WriteLine("Não existe: {0}", valorProcurado);
 // }
 
-
 //System.Console.WriteLine("Array original: ");
 //op.ImprimirArray(array);
 
@@ -93,7 +108,6 @@ System.Console.WriteLine($"Capacidade atual do array após redimensionar: {array
 // }
 
 //matriz[0,0] = 5;
-
 
 // int[] arrayInteiros = new int[3];
 
