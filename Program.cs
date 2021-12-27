@@ -1,19 +1,34 @@
 ﻿using Colecoes.Helper;
 
-Queue<string> fila = new Queue<string>();
+Stack<string> pilhaLivros = new Stack<string>();
 
-fila.Enqueue("Moises");
-fila.Enqueue("Nicolly");
-fila.Enqueue("Natiara");
+pilhaLivros.Push("O Senhor dos Anéis");
+pilhaLivros.Push("O Hobbit");
+pilhaLivros.Push("A Roda do Tempo");
 
-System.Console.WriteLine($"Pessoas na fila: {fila.Count}");
+System.Console.WriteLine($"Livros para leitura: {pilhaLivros.Count}");
 
-while(fila.Count > 0)
+while (pilhaLivros.Count > 0)
 {
-  System.Console.WriteLine($"Vez de: {fila.Peek()}");
-  System.Console.WriteLine($"{fila.Dequeue()} atendido");
+  System.Console.WriteLine($"Próximo livro para leitura: {pilhaLivros.Peek()}");
+  System.Console.WriteLine($"{pilhaLivros.Pop()} lido com sucesso");
 }
-System.Console.WriteLine($"Pessoas na fila: {fila.Count}");
+System.Console.WriteLine($"Livros para leitura: {pilhaLivros.Count}");
+
+// Queue<string> fila = new Queue<string>();
+
+// fila.Enqueue("Moises");
+// fila.Enqueue("Nicolly");
+// fila.Enqueue("Natiara");
+
+// System.Console.WriteLine($"Pessoas na fila: {fila.Count}");
+
+// while(fila.Count > 0)
+// {
+//   System.Console.WriteLine($"Vez de: {fila.Peek()}");
+//   System.Console.WriteLine($"{fila.Dequeue()} atendido");
+// }
+// System.Console.WriteLine($"Pessoas na fila: {fila.Count}");
 
 // OperacoesLista opLista = new OperacoesLista();
 // List<string> estados = new List<string> {"SP", "MG", "BA", "ES", "RN", "CE"};
