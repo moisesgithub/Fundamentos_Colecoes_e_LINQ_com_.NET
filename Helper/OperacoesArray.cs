@@ -29,5 +29,9 @@ namespace Colecoes.Helper
             //     System.Console.WriteLine(array[i]);
             // }
         }
+        public void Ordernar(ref int[] array)
+        {
+            Array.Sort(array);
+        }
     }
 }
