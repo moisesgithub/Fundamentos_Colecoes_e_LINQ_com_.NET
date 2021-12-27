@@ -1,20 +1,35 @@
 ﻿using Colecoes.Helper;
 
-OperacoesLista opLista = new OperacoesLista();
-List<string> estados = new List<string> {"SP", "MG", "BA", "ES", "RN", "CE"};
-string[] estadoArray = new string[2] { "RJ", "SP" };
+Queue<string> fila = new Queue<string>();
+
+fila.Enqueue("Moises");
+fila.Enqueue("Nicolly");
+fila.Enqueue("Natiara");
+
+System.Console.WriteLine($"Pessoas na fila: {fila.Count}");
+
+while(fila.Count > 0)
+{
+  System.Console.WriteLine($"Vez de: {fila.Peek()}");
+  System.Console.WriteLine($"{fila.Dequeue()} atendido");
+}
+System.Console.WriteLine($"Pessoas na fila: {fila.Count}");
+
+// OperacoesLista opLista = new OperacoesLista();
+// List<string> estados = new List<string> {"SP", "MG", "BA", "ES", "RN", "CE"};
+// string[] estadoArray = new string[2] { "RJ", "SP" };
 
 
-System.Console.WriteLine($"Quantidade de elementos na lista: {estados.Count}");
-opLista.ImprimirListaString(estados);
+// System.Console.WriteLine($"Quantidade de elementos na lista: {estados.Count}");
+// opLista.ImprimirListaString(estados);
 
-//System.Console.WriteLine("Removendo o elemento da lista");
-//estados.Remove("RJ");
+// System.Console.WriteLine("Removendo o elemento da lista");
+// estados.Remove("RJ");
 
-//estados.AddRange(estadoArray);
-estados.Insert(1, "RJ");
+// estados.AddRange(estadoArray);
+// estados.Insert(1, "RJ");
 
-opLista.ImprimirListaString(estados);
+// opLista.ImprimirListaString(estados);
 
 
 // OperacoesArray op = new OperacoesArray();
