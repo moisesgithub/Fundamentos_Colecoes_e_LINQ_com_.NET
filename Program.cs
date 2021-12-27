@@ -1,10 +1,28 @@
-﻿
-int[] arrayInteiros = new int[3];
+﻿int[,] matriz = new int[4,2]
+{
+    {10,2},
+    {30,4},
+    {5,60},
+    {70,8}
+};//matriz já inicializada
 
-arrayInteiros[0] = 10;
-arrayInteiros[1] = 20;
-arrayInteiros[2] = int.Parse("30");
-arrayInteiros[3] = 40;
+for (int i = 0; i < matriz.GetLength(0); i++)
+{
+    for (int j = 0; j < matriz.GetLength(1); j++)
+    {
+        System.Console.WriteLine(matriz[i,j]);
+    }
+}
+
+//matriz[0,0] = 5;
+
+
+// int[] arrayInteiros = new int[3];
+
+// arrayInteiros[0] = 10;
+// arrayInteiros[1] = 20;
+// arrayInteiros[2] = int.Parse("30");
+// arrayInteiros[3] = 40;
 
 // System.Console.WriteLine("Percorrenco o array pelo for");
 
