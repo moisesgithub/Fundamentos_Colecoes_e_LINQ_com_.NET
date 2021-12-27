@@ -1,16 +1,24 @@
 ﻿using Colecoes.Helper;
 
 OperacoesArray op = new OperacoesArray();
-int[] array = new int[10] { 6, 3, 8, 1, 9 , 2, 5, 4, 7, 0 };
+int[] array = new int[5] { 6, 3, 8, 1, 9 };
+int[] arrayCopia = new int[10];
 
-System.Console.WriteLine("Array original: ");
-op.ImprimirArray(array);
+//System.Console.WriteLine("Array original: ");
+//op.ImprimirArray(array);
 
 //op.OrdernarBubbleSort(ref array);
-op.Ordernar(ref array);
+//op.Ordernar(ref array);
 
-System.Console.WriteLine("Array ordenado: ");
-op.ImprimirArray(array);
+//System.Console.WriteLine("Array ordenado: ");
+//op.ImprimirArray(array);
+
+System.Console.WriteLine("Array antes da cópia: ");
+op.ImprimirArray(arrayCopia);
+
+op.Copiar(ref array, ref arrayCopia);
+System.Console.WriteLine("Array depois da cópia: ");
+op.ImprimirArray(arrayCopia);
 
 // int[,] matriz = new int[4,2]
 // {

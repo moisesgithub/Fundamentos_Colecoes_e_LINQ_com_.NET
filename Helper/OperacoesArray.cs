@@ -33,5 +33,9 @@ namespace Colecoes.Helper
         {
             Array.Sort(array);
         }
+        public void Copiar(ref int[] array, ref int[] arrayDestino)
+        {
+            Array.Copy(array, arrayDestino, array.Length);
+        }
     }
 }
