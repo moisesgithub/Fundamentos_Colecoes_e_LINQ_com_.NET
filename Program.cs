@@ -11,7 +11,8 @@ opLista.ImprimirListaString(estados);
 //System.Console.WriteLine("Removendo o elemento da lista");
 //estados.Remove("RJ");
 
-estados.AddRange(estadoArray);
+//estados.AddRange(estadoArray);
+estados.Insert(1, "RJ");
 
 opLista.ImprimirListaString(estados);
 
