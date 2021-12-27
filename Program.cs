@@ -1,7 +1,7 @@
 ﻿using Colecoes.Helper;
 
 OperacoesLista opLista = new OperacoesLista();
-List<string> estados = new List<string> {"SP", "MG", "BA" };
+List<string> estados = new List<string> {"SP", "MG", "BA", "ES", "RN", "CE"};
 string[] estadoArray = new string[2] { "RJ", "SP" };
 
 
