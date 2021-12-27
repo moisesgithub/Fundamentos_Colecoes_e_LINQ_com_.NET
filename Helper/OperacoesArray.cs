@@ -21,10 +21,13 @@ namespace Colecoes.Helper
         }
         public void ImprimirArray(int[] array)
         {
-            for(int i = 0; i < array.Length; i++)
-            {
-                System.Console.WriteLine(array[i]);
-            }
+            var linha = string.Join(",", array);
+            System.Console.WriteLine(linha);
+            
+            // for(int i = 0; i < array.Length; i++)
+            // {
+            //     System.Console.WriteLine(array[i]);
+            // }
         }
     }
 }
