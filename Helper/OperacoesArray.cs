@@ -37,5 +37,9 @@ namespace Colecoes.Helper
         {
             Array.Copy(array, arrayDestino, array.Length);
         }
+        public bool Existe(int[] array, int valor)
+        {
+            return Array.Exists(array, elemento => elemento == valor);
+        }
     }
 }
