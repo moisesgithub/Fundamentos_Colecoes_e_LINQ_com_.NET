@@ -11,8 +11,15 @@ estados.Add("MG", "Minas Gerais");
 //    System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 // }
 
-string valorProcurado = estados["SP"];
-System.Console.WriteLine($"Valor procurado: {valorProcurado}");
+string valorProcurado = "SP";
+
+System.Console.WriteLine("Valor original");
+System.Console.WriteLine(estados[valorProcurado]);
+
+estados[valorProcurado] = "SP - teste atualização";
+
+System.Console.WriteLine("Valor Atualizado");
+System.Console.WriteLine(estados[valorProcurado]);
 
 // Stack<string> pilhaLivros = new Stack<string>();
 
