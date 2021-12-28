@@ -6,10 +6,13 @@ estados.Add("SP", "São Paulo");
 estados.Add("RJ", "Rio de Janeiro");
 estados.Add("MG", "Minas Gerais");
 
-foreach (var item in estados)
-{
-   System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
+// foreach (var item in estados)
+// {
+//    System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+
+string valorProcurado = estados["SP"];
+System.Console.WriteLine($"Valor procurado: {valorProcurado}");
 
 // Stack<string> pilhaLivros = new Stack<string>();
 
