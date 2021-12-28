@@ -8,19 +8,31 @@ estados.Add("MG", "Minas Gerais");
 
 foreach (var item in estados)
 {
-   System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+   //System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
 
-string valorProcurado = "SP";
+string valorProcurado = "ES";
 
-System.Console.WriteLine($"Removendo o Valor : {valorProcurado}");
+//var teste = estados["SC"];
 
-estados.Remove(valorProcurado);
-
-foreach (var item in estados)
+if (estados.TryGetValue(valorProcurado, out var estadoEncontrado))
 {
-   System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+   System.Console.WriteLine(estadoEncontrado);
 }
+else
+{
+   System.Console.WriteLine($"Chave {valorProcurado} não existe no dicionário!");
+}
+
+
+// System.Console.WriteLine($"Removendo o Valor : {valorProcurado}");
+
+// estados.Remove(valorProcurado);
+
+// foreach (var item in estados)
+// {
+//    System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
 
 // System.Console.WriteLine("Valor original");
 // System.Console.WriteLine(estados[valorProcurado]);
