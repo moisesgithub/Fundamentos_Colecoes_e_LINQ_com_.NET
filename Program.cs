@@ -1,16 +1,25 @@
 ﻿using Colecoes.Helper;
 
-int[] arrayNumeros = new int[5] { 1, 4, 8, 15, 19 };
+int[] arrayNumeros = new int[7] { 100, 1, 4, 8, 0, 15, 19 };
 
-var numerosParesQuery = 
-      from num in arrayNumeros
-      where num % 2 == 0
-      select num;
+var minimo = arrayNumeros.Min();
+var maximo = arrayNumeros.Max();
+var medio = arrayNumeros.Average();//retorno do tipo double
 
-var numerosParesMetodo = arrayNumeros.Where(x => x % 2 == 0).OrderBy(x => x).ToList();
+Console.WriteLine($"Mínimo: {minimo}");
+Console.WriteLine($"Máximo: {maximo}");
+Console.WriteLine($"Médio: {medio}");
 
-Console.WriteLine("Numeros pares query: " + string.Join(", ", numerosParesQuery));
-Console.WriteLine("Numeros pares método: " + string.Join(", ", numerosParesMetodo));
+
+// var numerosParesQuery = 
+//       from num in arrayNumeros
+//       where num % 2 == 0
+//       select num;
+
+// var numerosParesMetodo = arrayNumeros.Where(x => x % 2 == 0).OrderBy(x => x).ToList();
+
+// Console.WriteLine("Numeros pares query: " + string.Join(", ", numerosParesQuery));
+// Console.WriteLine("Numeros pares método: " + string.Join(", ", numerosParesMetodo));
 
 
 // Dictionary<string, string> estados = new Dictionary<string, string>();
