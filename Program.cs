@@ -6,20 +6,29 @@ estados.Add("SP", "São Paulo");
 estados.Add("RJ", "Rio de Janeiro");
 estados.Add("MG", "Minas Gerais");
 
-// foreach (var item in estados)
-// {
-//    System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-// }
+foreach (var item in estados)
+{
+   System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
 
 string valorProcurado = "SP";
 
-System.Console.WriteLine("Valor original");
-System.Console.WriteLine(estados[valorProcurado]);
+System.Console.WriteLine($"Removendo o Valor : {valorProcurado}");
 
-estados[valorProcurado] = "SP - teste atualização";
+estados.Remove(valorProcurado);
 
-System.Console.WriteLine("Valor Atualizado");
-System.Console.WriteLine(estados[valorProcurado]);
+foreach (var item in estados)
+{
+   System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+// System.Console.WriteLine("Valor original");
+// System.Console.WriteLine(estados[valorProcurado]);
+
+// estados[valorProcurado] = "SP - teste atualização";
+
+// System.Console.WriteLine("Valor Atualizado");
+// System.Console.WriteLine(estados[valorProcurado]);
 
 // Stack<string> pilhaLivros = new Stack<string>();
 
