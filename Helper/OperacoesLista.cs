@@ -6,7 +6,7 @@ namespace Colecoes.Helper
     {
       for (int i = 0; i < lista.Count; i++)
       {
-        System.Console.WriteLine($"índice {i}, Valor: {lista[i]}");
+        Console.WriteLine($"índice {i}, Valor: {lista[i]}");
       }
     }
   }

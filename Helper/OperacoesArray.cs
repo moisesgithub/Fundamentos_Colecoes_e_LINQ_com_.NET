@@ -22,11 +22,11 @@ namespace Colecoes.Helper
         public void ImprimirArray(int[] array)
         {
             var linha = string.Join(",", array);
-            System.Console.WriteLine(linha);
+            Console.WriteLine(linha);
             
             // for(int i = 0; i < array.Length; i++)
             // {
-            //     System.Console.WriteLine(array[i]);
+            //     Console.WriteLine(array[i]);
             // }
         }
         public void Ordernar(ref int[] array)
