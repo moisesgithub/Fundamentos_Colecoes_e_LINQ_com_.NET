@@ -1,28 +1,41 @@
 ﻿using Colecoes.Helper;
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+int[] arrayNumeros = new int[5] { 1, 4, 8, 15, 19 };
 
-estados.Add("SP", "São Paulo");
-estados.Add("RJ", "Rio de Janeiro");
-estados.Add("MG", "Minas Gerais");
+var numerosParesQuery = 
+      from num in arrayNumeros
+      where num % 2 == 0
+      select num;
 
-foreach (var item in estados)
-{
-   //Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
+var numerosParesMetodo = arrayNumeros.Where(x => x % 2 == 0).OrderBy(x => x).ToList();
 
-string valorProcurado = "ES";
+Console.WriteLine("Numeros pares query: " + string.Join(", ", numerosParesQuery));
+Console.WriteLine("Numeros pares método: " + string.Join(", ", numerosParesMetodo));
 
-//var teste = estados["SC"];
 
-if (estados.TryGetValue(valorProcurado, out var estadoEncontrado))
-{
-   Console.WriteLine(estadoEncontrado);
-}
-else
-{
-   Console.WriteLine($"Chave {valorProcurado} não existe no dicionário!");
-}
+// Dictionary<string, string> estados = new Dictionary<string, string>();
+
+// estados.Add("SP", "São Paulo");
+// estados.Add("RJ", "Rio de Janeiro");
+// estados.Add("MG", "Minas Gerais");
+
+// foreach (var item in estados)
+// {
+//    //Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+
+// string valorProcurado = "ES";
+
+// //var teste = estados["SC"];
+
+// if (estados.TryGetValue(valorProcurado, out var estadoEncontrado))
+// {
+//    Console.WriteLine(estadoEncontrado);
+// }
+// else
+// {
+//    Console.WriteLine($"Chave {valorProcurado} não existe no dicionário!");
+// }
 
 
 // Console.WriteLine($"Removendo o Valor : {valorProcurado}");
@@ -175,7 +188,7 @@ else
 // {
 //     for (int j = 0; j < matriz.GetLength(1); j++)
 //     {
-//         Console.WriteLine(matriz[i,j]);
+//       Console.WriteLine(matriz[i,j]);
 //     }
 // }
 
