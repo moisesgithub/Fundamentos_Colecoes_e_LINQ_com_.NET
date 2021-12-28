@@ -1,14 +1,19 @@
 ﻿using Colecoes.Helper;
 
-int[] arrayNumeros = new int[7] { 100, 1, 4, 8, 0, 15, 19 };
+int[] arrayNumeros = new int[10] { 100, 1, 4, 8, 0, 15, 19, 19, 4, 100 };
 
 var minimo = arrayNumeros.Min();
 var maximo = arrayNumeros.Max();
 var medio = arrayNumeros.Average();//retorno do tipo double
+var soma = arrayNumeros.Sum();
+var arrayUnico = arrayNumeros.Distinct().ToArray();
 
 Console.WriteLine($"Mínimo: {minimo}");
 Console.WriteLine($"Máximo: {maximo}");
 Console.WriteLine($"Médio: {medio}");
+Console.WriteLine($"Soma: {soma}");
+Console.WriteLine($"Array original: {string.Join(", ", arrayNumeros)}");
+Console.WriteLine($"Array distinto: {string.Join(", ", arrayUnico)}");
 
 
 // var numerosParesQuery = 
